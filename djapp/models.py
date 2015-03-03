@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Piece(models.Model):
-
+    id = models.AutoField (primary_key=True)
     catalogue_id = models.CharField(max_length=45)
     heath_id = models.CharField(max_length=45, blank=True)
     piece_name = models.CharField(max_length=45, blank=True)
@@ -21,8 +21,8 @@ class Piece(models.Model):
     cataloguer = models.CharField(max_length=45, blank=True)
     catalogue_date = models.DateField(blank=True, null=True)
     #many to one
-    exhibition = models.ForeignKey('Exhibition')
-    publication = models.ForeignKey('Publication')
+    exhibition = models.ForeignKey("Exhibition")
+    publication = models.ForeignKey("Publication")
 
     def __str__(self):
         return self.piece_name

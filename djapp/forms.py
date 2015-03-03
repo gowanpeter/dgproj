@@ -12,8 +12,8 @@ class PieceForm(forms.ModelForm):
 #Create the form class
 class GlazeLookupForm(forms.ModelForm):
     class Meta:
-    	model = GlazeLookup
-    	fields = "__all__"
+        model = GlazeLookup
+        fields = "__all__"
 
 #form to add a glaze
 #form = GlazeLookupForm(ModelForm)
@@ -26,61 +26,61 @@ class GlazeLookupForm(forms.ModelForm):
 #Create the form class
 class DocumentationForm(forms.ModelForm):
     class Meta:
-      model = Documentation
-      fields = "__all__"
+        model = Documentation
+        fields = "__all__"
 
 
 class ExhibitionForm(forms.ModelForm):
     class Meta:
-      model = Exhibition
-      fields = "__all__"
+        model = Exhibition
+        fields = "__all__"
 
 class ConditionForm(forms.ModelForm):
     class Meta:
-      model = Condition
-      fields = "__all__"
+        model = Condition
+        fields = ['name', 'condition']
 
 
 class HeathLineLookupForm(forms.ModelForm):
-  class Meta:
-    model = HeathLineLookup
-    fields = "__all__"
+    class Meta:
+        model = HeathLineLookup
+        fields = "__all__"
 
 
 class LogoForm(forms.ModelForm):
-  class Meta:
-    model = Logo
-    fields = "__all__"
+    class Meta:
+        model = Logo
+        fields = "__all__"
 
 
 class MakerLookupForm(forms.ModelForm):
-  class Meta:
-    model = MakerLookup
-    fields = "__all__"
+    class Meta:
+        model = MakerLookup
+        fields ="__all__"
 
 
 class MaterialLookupForm(forms.ModelForm):
-  class Meta:
-    model = MaterialLookup
-    fields = "__all__"
+    class Meta:
+        model = MaterialLookup
+        fields = "__all__"
 
 
 class MethodLookupForm(forms.ModelForm):
-  class Meta:
-    model = MethodLookup
-    fields = "__all__"
+    class Meta:
+        model = MethodLookup
+        fields = "__all__"
 
 
 class PublicationForm(forms.ModelForm):
-  class Meta:
-    model = Publication
-    fields = "__all__"
+    class Meta:
+        model = Publication
+        fields = "__all__"
 
 
 class SetCollectionForm(forms.ModelForm):
-  class Meta:
-    model = SetCollection
-    fields = "__all__"
+    class Meta:
+        model = SetCollection
+        fields = "__all__"
 
 
 
